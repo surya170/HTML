@@ -1,0 +1,164 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables </title>
+    <style>
+        body {
+            margin-bottom: 500px;
+        }
+        #orange, #orange th,#orange td {
+            border: 2px solid orangered;
+            border-collapse: collapse;
+        }
+        #orange{
+            width: 100%;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 0 0 20px black;
+        }
+        #orange thead {
+            background-color: orangered;
+            color: white;
+        }
+        #orange tbody {
+            background-color: lightsalmon;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2> Simple Table </h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>SNO</th>
+                <th>NAME</th>
+                <th>COMPANY</th>
+                <th>ADDRESS </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>Infosys</td>
+                <td>Bangalore</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rajan</td>
+                <td>Wipro</td>
+                <td>Hyderabad</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mahesh</td>
+                <td>HCL</td>
+                <td>Noida</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2> Table with ColSpan </h2>
+    <table border="2 ">
+        <thead>
+            <tr>
+                <th>SNO</th>
+                <th>NAME</th>
+                <th colspan="2">COMPANY & ADDRESS </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>Infosys</td>
+                <td>Bangalore</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rajan</td>
+                <td>Wipro</td>
+                <td>Hyderabad</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mahesh</td>
+                <td>HCL</td>
+                <td>Noida</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Table With Row Span </h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>SNO </th>
+                <th>NAME </th>
+                <th>COMPANY </th>
+                <th>ADDRESS </th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">1</td>
+                <td>John</td>
+                <td>Infosys</td>
+                <td>Bangalore</td>
+            </tr>
+            <tr>
+                <td>Rajan</td>
+                <td>Wipro</td>
+                <td>Hyderabad</td>
+            </tr>
+            <tr>
+                <td>Mahesh</td>
+                <td>HCL</td>
+                <td>Noida</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Custom Table </h2>
+    <table id="orange">
+        <thead>
+            <tr>
+                <th>SNO</th>
+                <th>NAME</th>
+                <th>COMPANY</th>
+                <th>ADDRESS </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>Infosys</td>
+                <td>Bangalore</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rajan</td>
+                <td>Wipro</td>
+                <td>Hyderabad</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mahesh</td>
+                <td>HCL</td>
+                <td>Noida</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
